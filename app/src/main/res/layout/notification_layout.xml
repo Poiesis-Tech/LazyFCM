@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /***************************************************************
+  ~  * @Author: Tariq Hussain
+  ~  * @Date: 3/6/24, 5:09 PM.
+  ~  * @Accounts
+  ~  *      -> https://github.com/Tariq2518
+  ~  *      -> https://www.linkedin.com/in/tariqhpk/
+  ~  *
+  ~  * All rights reserved.
+  ~  * Copying and redistributing are not allowed.
+  ~  ***************************************************************/
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/img_icon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="10dp"
+            tools:src="@tools:sample/avatars"
+            android:contentDescription="@null" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/img_icon"
+            android:layout_alignBottom="@+id/img_icon"
+            android:layout_toEndOf="@+id/img_icon"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_toStartOf="@+id/txt_ad"
+                android:lines="1"
+                android:ellipsize="end"
+                tools:text="My Application Title Name"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/txt_short_desc"
+                style="Custom Notification Text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_title"
+                android:maxLines="2"
+                android:ellipsize="end"
+                tools:text="My Application Short Description My Application Short Description "
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/txt_ad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/round_corners_noti"
+                android:backgroundTint="#FFB74D"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:text="Ad"
+                tools:visibility="visible"
+                android:visibility="invisible"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/img_feature"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout_height="200dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="Feature Image"
+            android:scaleType="fitCenter"
+            tools:visibility="visible"
+            android:visibility="gone"
+            tools:src="@tools:sample/avatars"
+            />
+    </RelativeLayout>
+</LinearLayout>

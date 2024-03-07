@@ -1,0 +1,4 @@
+<resources>
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+    <string name="default_notification_channel_name" translatable="false">Promotion Notification Channel</string>
+</resources>
