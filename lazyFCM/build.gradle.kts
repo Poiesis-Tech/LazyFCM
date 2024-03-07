@@ -11,6 +11,7 @@
  *  **************************************************************
  */
 import org.gradle.api.tasks.bundling.Jar
+
 plugins {
     id("com.android.library")
     id("org.jetbrains.kotlin.android")
@@ -65,15 +66,27 @@ dependencies {
 }
 
 
+//publishing {
+//    publications {
+//        create<MavenPublication>("release") {
+//            groupId = "com.poiesistech.lazyfcm"
+//            artifactId = "lazyFcm"
+//            version = "1.3"
+//            from(components.find { it.name == "release" || it.name == "java" })
+//        }
+//    }
+//}
 
-
-publishing {
-    publications {
-        create<MavenPublication>("release") {
-            groupId = "com.poiesistech.lazyfcm"
-            artifactId = "lazyFcm"
-            version = "1.3"
-            from(components.find { it.name == "release" || it.name == "java" })
+afterEvaluate {
+    publishing {
+        publications {
+            // Creates a Maven publication called "release".
+            create<MavenPublication>("release") {
+                groupId = "com.poiesistech.lazyfcm"
+                artifactId = "lazyFcm"
+                version = "1.3"
+                from(components.find { it.name == "release" || it.name == "java" })
+            }
         }
     }
 }
