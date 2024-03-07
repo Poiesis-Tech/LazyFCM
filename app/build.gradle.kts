@@ -6,11 +6,11 @@ plugins {
 }
 
 android {
-    namespace = "com.poiesistech.lazyfcm"
+    namespace = "com.poiesistech.lazy"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.poiesistech.lazyfcm"
+        applicationId = "com.poiesistech.lazy"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
