@@ -72,8 +72,8 @@ publishing {
         create<MavenPublication>("release") {
             groupId = "com.poiesistech.lazyfcm"
             artifactId = "lazyFcm"
-            version = "1.2"
-
+            version = "1.3"
+            from(components.find { it.name == "release" || it.name == "java" })
         }
     }
 }

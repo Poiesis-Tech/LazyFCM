@@ -28,7 +28,6 @@ package com.poiesistech.lazyfcm
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.poiesistech.lazyfcm.R
 import com.poiesistech.lazyfcm.fcm.LazyFCM
 
 
