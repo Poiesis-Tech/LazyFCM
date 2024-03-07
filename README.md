@@ -1,3 +1,6 @@
+
+[![](https://jitpack.io/v/Poiesis-Tech/LazyFCM.svg)](https://jitpack.io/#Poiesis-Tech/LazyFCM)
+
 To get a Git project into your build:
 
 Step 1. Add the JitPack repository to your build file
