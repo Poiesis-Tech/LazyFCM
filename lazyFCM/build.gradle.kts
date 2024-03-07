@@ -18,6 +18,7 @@ plugins {
 }
 
 
+
 android {
     namespace = "com.poiesistech.lazyfcm"
     compileSdk = 34
@@ -64,12 +65,15 @@ dependencies {
 }
 
 
+
+
 publishing {
     publications {
-        create<MavenPublication>("maven") {
+        create<MavenPublication>("release") {
             groupId = "com.poiesistech.lazyfcm"
             artifactId = "lazyFcm"
-            version = "1.0"
+            version = "1.2"
+
         }
     }
 }
