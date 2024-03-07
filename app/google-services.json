@@ -1,21 +1,21 @@
 {
   "project_info": {
-    "project_number": "417258416366",
-    "project_id": "lazyfcm",
-    "storage_bucket": "lazyfcm.appspot.com"
+    "project_number": "848983494234",
+    "project_id": "lazyfcm-f6002",
+    "storage_bucket": "lazyfcm-f6002.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:417258416366:android:88e65833376ee2c2f0ebff",
+        "mobilesdk_app_id": "1:848983494234:android:1c4b626ee4a144cb0d9263",
         "android_client_info": {
-          "package_name": "com.poiesistech.lazyfcm"
+          "package_name": "com.poiesistech.lazy"
         }
       },
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyDL3aLL7ey8TToCRcSpdhzhTdOW1iaSz1o"
+          "current_key": "AIzaSyBsCOBiWa8WhGTiXd_-D38_w9m6H0NUxIY"
         }
       ],
       "services": {
