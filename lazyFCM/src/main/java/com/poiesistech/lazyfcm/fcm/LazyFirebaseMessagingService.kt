@@ -127,6 +127,9 @@ class LazyFirebaseMessagingService(): FirebaseMessagingService() {
         if (storePackage != null && isPackageNameSame(storePackage)) {
             remoteViews.setViewVisibility(R.id.txt_ad, View.VISIBLE)
         }
+        if (icon.isEmpty()) {
+            remoteViews.setViewVisibility(R.id.img_icon, View.GONE)
+        }
 
         //Notification Parameters
         val channelId = getString(R.string.default_notification_channel_id)
